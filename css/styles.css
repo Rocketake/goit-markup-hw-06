@@ -297,6 +297,63 @@ img {
   background-color: var(--hover-cl);
   fill: var(--back-cl);
 }
+
+.modal-container {
+  width: 360px;
+}
+.modal-title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input {
+  display: block;
+  width: 360px;
+  height: 40px;
+}
+
+.text-area {
+  display: block;
+}
+
+.modal-container .input {
+  padding: 0 38px;
+}
+
+.modal-label {
+  position: relative;
+  height: 58px;
+}
+
+.modal-container .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.label-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--icon-color-second);
+}
+.input-text {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.privacy-policy {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
 /* features, services, team, customers */
 
 .features-list,
