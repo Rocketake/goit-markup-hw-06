@@ -346,7 +346,6 @@ img {
   width: 360px;
   height: 40px;
   padding: 0 38px;
-  margin-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
@@ -375,6 +374,17 @@ img {
   height: 58px;
 }
 
+.label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.not-margin {
+  margin-bottom: 0;
+}
+
 .modal-container .icon {
   position: absolute;
   bottom: 8px;
@@ -388,10 +398,6 @@ img {
   letter-spacing: 0.01em;
 
   color: var(--icon-color-second);
-}
-.input-text {
-  display: block;
-  margin-bottom: 4px;
 }
 
 .privacy-policy {
@@ -430,6 +436,10 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.privacy-policy-text a {
+  color: var(--text-cl);
 }
 
 /* features, services, team, customers */
@@ -681,6 +691,7 @@ img {
 
 .footer-label .input {
   display: block;
+  padding: 8px 16px;
   background-color: transparent;
   border: 1px solid var(--back-cl);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -692,9 +703,6 @@ img {
 }
 
 .footer-label .input::placeholder {
-  padding: 8px 0;
-  padding-left: 16px;
-
   color: var(--back-cl);
 }
 
@@ -715,6 +723,15 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn-submit:hover,
+.footer-btn-submit:focus {
+  background-color: var(--hover-cl);
 }
 
 /* portfolio */
